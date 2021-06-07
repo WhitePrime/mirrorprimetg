@@ -72,8 +72,8 @@ def chat_list(update, context):
 
 @run_async
 def restart(update, context):
-    restart_message = sendMessage("Restarting, Please wait!", context.bot, update)
-    LOGGER.info(f'Restarting the Bot...')
+    restart_message = sendMessage("Перезапуск, ожидайте!", context.bot, update)
+    LOGGER.info(f'Перезапуск...')
     # Save restart message object in order to reply to it after restarting
     fs_utils.clean_all()
     with open('restart.pickle', 'wb') as status:
