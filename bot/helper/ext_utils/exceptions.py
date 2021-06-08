@@ -1,8 +1,8 @@
 class DirectDownloadLinkException(Exception):
-    """Not method found for extracting direct download link from the http link"""
+    """Не найден метод для извлечения прямой ссылки для скачивания из http-ссылки"""
     pass
 
 
 class NotSupportedExtractionArchive(Exception):
-    """The archive format use is trying to extract is not supported"""
+    """Формат архива, который используется для извлечения, не поддерживается"""
     pass
